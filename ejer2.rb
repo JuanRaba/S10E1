@@ -1,15 +1,15 @@
 class MiClase
-    attr_writer :name
+    attr_accessor :name
     def initialize(name)
         @name = name
     end
 
-    def self.saludar
-        "Hola! Soy la clase #{@name}"
+    def saludar
+        "Hola! Soy la clase #{@name} de la clase #{self.class}"
     end
 end
 
 c = MiClase.new('Clase Uno')
 puts c.name
 c.name = 'Nombre Nuevo'
-puts MiClase.saludar
+puts c.saludar
