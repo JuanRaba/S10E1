@@ -4,12 +4,12 @@ class MiClase
         @name = name
     end
 
-    def saludar
-        "Hola! Soy la clase #{@name} de la clase #{self.class}"
+    def self.saludar
+        "Hola! Soy la clase #{self}"
     end
 end
 
 c = MiClase.new('Clase Uno')
 puts c.name
 c.name = 'Nombre Nuevo'
-puts c.saludar
+puts MiClase.saludar
