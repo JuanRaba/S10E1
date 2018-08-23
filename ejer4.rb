@@ -1,4 +1,4 @@
-class Semana
+module Semana
   @@primer_dia = 'Lunes'
 
   def self.primer_dia
