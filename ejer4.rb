@@ -1,8 +1,8 @@
 module Semana
-  @@primer_dia = 'Lunes'
+  PRIMERDIA = 'Lunes'
 
   def self.primer_dia
-    @@primer_dia
+    PRIMERDIA
   end
 
   def self.en_un_meses
