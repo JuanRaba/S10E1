@@ -1,15 +1,11 @@
-class MiClase
-    attr_writer :name
-    def initialize(name)
-        @name = name
-    end
+class Vehicle
+  def initialize(model, year)
+    @model = model
+    @year = year
+    @start = false
+  end
 
-    def self.saludar
-        "Hola! Soy la clase #{@name}"
-    end
+  def engine_start
+    @start = true
+  end
 end
-
-c = MiClase.new('Clase Uno')
-puts c.name
-c.name = 'Nombre Nuevo'
-puts MiClase.saludar
