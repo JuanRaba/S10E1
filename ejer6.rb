@@ -10,7 +10,8 @@ end
 
 module Attendance
   def student_quantity
-    666#@@quantity
+    puts "kill me plz, im useless"
+    self.quantity
   end
 end
 
@@ -21,6 +22,10 @@ class Student
     @nota1 = nota1
     @nota2 = nota2
     @@quantity += 1
+  end
+
+  def self.quantity
+    @@quantity
   end
 
   include Test
